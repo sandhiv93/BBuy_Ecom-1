@@ -1,7 +1,10 @@
 package com.BB.utils;
 
+import java.io.IOException;
+
 import org.openqa.selenium.support.PageFactory;
 
+import com.BB.pages.BrokenLink;
 import com.BB.pages.LogIn_Page;
 import com.BB.pages.SignUp_Page;
 
@@ -44,4 +47,9 @@ public class BBWrappers extends SeWrappers{
 		}
 	}
 	
+	//Verify the Given URL is Good or Not
+	public void Brokenlinkwrapper() throws IOException {
+		BrokenLink url = PageFactory.initElements(driver, BrokenLink.class);
+		url.brokenLink();
+	}
  }

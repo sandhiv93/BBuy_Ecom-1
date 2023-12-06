@@ -9,6 +9,7 @@
 			<class name="com.BB.utils.Reports"/>
 			<!--<class name="com.BB.test.SignUpTest_Pive" />-->
 			<!--<class name="com.BB.test.LogInTest_Pive" />-->
+			<class name="com.BB.test.BrokenLinkTest" />
 		</classes>
 	</test> <!--
 	Test -->
@@ -16,7 +17,7 @@
 		<parameter name="browser" value="Chrome" />
 		<classes>
 			<!--<class name="com.BB.test.SignUpTest_Nive" />-->
-			<class name="com.BB.test.LogInTest_Nive" />
+			<!--<class name="com.BB.test.LogInTest_Nive" />-->
 		</classes>
 
 	</test>
