@@ -37,7 +37,7 @@ public class BBWrappers extends SeWrappers{
 			login.enterPassword(mypwd);
 			login.screenshot("LogIn_Valid");
 			login.clickLoginfinish();
-			login.mynameAfterlOGIN();
+			//login.mynameAfterlOGIN();
 		} 
 		catch (Exception e) {
 			e.printStackTrace();

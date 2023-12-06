@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.BB.test.SignUpTest_Pive" class="method navigator-link" hash-for-method="signupTestvalid">signupTestvalid</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.BB.test.LogInTest_Nive" class="method navigator-link" hash-for-method="LogIn_InValid">LogIn_InValid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -121,14 +121,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.BB.test.SignUpTest_Pive</span>
+              <span class="class-name">com.BB.test.LogInTest_Nive</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="signupTestvalid">
-                  </a> <!-- signupTestvalid -->
-                  <span class="method-name">signupTestvalid</span>
+                  <a name="LogIn_InValid">
+                  </a> <!-- LogIn_InValid -->
+                  <span class="method-name">LogIn_InValid</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,11 +149,13 @@
       &lt;class name=&quot;com.BB.utils.SeWrappers&quot;/&gt;
       &lt;class name=&quot;com.BB.utils.BBWrappers&quot;/&gt;
       &lt;class name=&quot;com.BB.utils.Reports&quot;/&gt;
-      &lt;class name=&quot;com.BB.test.SignUpTest_Pive&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Positive Test Cases --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Negative Test cases&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.BB.test.LogInTest_Nive&quot;/&gt;
+    &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Negative Test cases --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
@@ -166,10 +168,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Positive Test Cases (4 classes)</span>
+                <span class="test-name">Positive Test Cases (3 classes)</span>
               </li>
               <li>
-                <span class="test-name">Negative Test cases (0 classes)</span>
+                <span class="test-name">Negative Test cases (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -197,9 +199,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'signupTestvalid')
-data.setCell(0, 2, 'com.BB.test.SignUpTest_Pive')
-data.setCell(0, 3, 106962);
+data.setCell(0, 1, 'LogIn_InValid')
+data.setCell(0, 2, 'com.BB.test.LogInTest_Nive')
+data.setCell(0, 3, 62211);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -237,25 +239,25 @@ return data;
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.BB.test.SignUpTest_Pive</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.BB.test.LogInTest_Nive</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(Chrome)</span>
-                <span class="method-start">542 ms</span>
+                <span class="method-start">673 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">signupTestvalid</span>
-                <span class="method-start">566 ms</span>
+                <span class="method-name">LogIn_InValid</span>
+                <span class="method-start">698 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">107534 ms</span>
+                <span class="method-start">62917 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.BB.utils.Reports</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">107650 ms</span>
+                <span class="method-start">63093 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
