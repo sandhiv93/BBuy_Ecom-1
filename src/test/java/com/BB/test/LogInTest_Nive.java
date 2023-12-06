@@ -17,7 +17,7 @@ public class LogInTest_Nive extends SeWrappers{
 	@Test(priority=2)
 	public void LogIn_InValid(){
 		try{
-			Reports.setTCDesc("Login of BestBuy functionality with Invalid credentials");
+			Reports.setTCDesc("Login of BestBuy functionality with Invalid_credentials");
 			launchBrowser();
 			bb.LogInwrappers("dev@mail.com", "qwerty");
 			se.screenshot("LogIn_InValid");
