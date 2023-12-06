@@ -820,6 +820,18 @@ public class SeWrappers {
 	    }
 	}
 
+	//55. Method for Javascript scroll down
+		public void jsscrollDownBottom(){
+			try{
+				JavascriptExecutor js = (JavascriptExecutor)driver;
+				js.executeScript("window.scrollTo(0,document.body.scrollHeight);");
+
+			}
+			catch(Exception e){
+				System.out.println("problem in  scroll down to the bottom of the page");
+				e.printStackTrace();
+			}
+		}
 }
 
 

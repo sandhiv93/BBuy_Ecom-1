@@ -9,7 +9,8 @@
 			<class name="com.BB.utils.Reports"/>
 			<!--<class name="com.BB.test.SignUpTest_Pive" />-->
 			<!--<class name="com.BB.test.LogInTest_Pive" />-->
-			<class name="com.BB.test.BrokenLinkTest" />
+			<!--<class name="com.BB.test.BrokenLinkTest" />-->
+			<class name="com.BB.test.BottomLinkTest" />
 		</classes>
 	</test> <!--
 	Test -->

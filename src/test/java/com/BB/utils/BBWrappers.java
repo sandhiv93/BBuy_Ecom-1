@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.support.PageFactory;
 
+import com.BB.pages.BottomLink;
 import com.BB.pages.BrokenLink;
 import com.BB.pages.LogIn_Page;
 import com.BB.pages.SignUp_Page;
@@ -52,4 +53,24 @@ public class BBWrappers extends SeWrappers{
 		BrokenLink url = PageFactory.initElements(driver, BrokenLink.class);
 		url.brokenLink();
 	}
+	
+	
+	//Verify the Bottom Links in Given URL
+	public void bottomLinkswrapper(){
+		try	{		
+			BottomLink footpage= PageFactory.initElements(driver, BottomLink.class);
+			footpage.clickCanadapage();
+			footpage.footerLinks();
+			screenshot("BottomLinks");
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+	
+	
+	
+	
+	
+	
  }
