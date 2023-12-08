@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.BB.test.BottomLinkTest" class="method navigator-link" hash-for-method="bottomLinksValid">bottomLinksValid</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.BB.test.LogInTest_Nive" class="method navigator-link" hash-for-method="LogIn_InValid(onetwo@gmail.com, 4564xcvb)">LogIn_InValid(onetwo@gmail.com, 4564xcvb)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.BB.test.LogInTest_Nive" class="method navigator-link" hash-for-method="LogIn_InValid(..@g.com, zxcvbn)">LogIn_InValid(..@g.com, zxcvbn)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.BB.test.LogInTest_Nive" class="method navigator-link" hash-for-method="LogIn_InValid(yahoo@gamul.org, 1234!&quot;£$%)">LogIn_InValid(yahoo@gamul.org, 1234!"£$%)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.BB.test.LogInTest_Nive" class="method navigator-link" hash-for-method="LogIn_InValid(muruga@yahoo.coms, qwerty)">LogIn_InValid(muruga@yahoo.coms, qwerty)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -121,14 +136,39 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.BB.test.BottomLinkTest</span>
+              <span class="class-name">com.BB.test.LogInTest_Nive</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="bottomLinksValid">
-                  </a> <!-- bottomLinksValid -->
-                  <span class="method-name">bottomLinksValid</span>
+                  <a name="LogIn_InValid(onetwo@gmail.com, 4564xcvb)">
+                  </a> <!-- LogIn_InValid(onetwo@gmail.com, 4564xcvb) -->
+                  <span class="method-name">LogIn_InValid</span>
+                  <span class="parameters">(onetwo@gmail.com,4564xcvb)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LogIn_InValid(..@g.com, zxcvbn)">
+                  </a> <!-- LogIn_InValid(..@g.com, zxcvbn) -->
+                  <span class="method-name">LogIn_InValid</span>
+                  <span class="parameters">(..@g.com,zxcvbn)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LogIn_InValid(yahoo@gamul.org, 1234!&quot;£$%)">
+                  </a> <!-- LogIn_InValid(yahoo@gamul.org, 1234!"£$%) -->
+                  <span class="method-name">LogIn_InValid</span>
+                  <span class="parameters">(yahoo@gamul.org,1234!"£$%)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LogIn_InValid(muruga@yahoo.coms, qwerty)">
+                  </a> <!-- LogIn_InValid(muruga@yahoo.coms, qwerty) -->
+                  <span class="method-name">LogIn_InValid</span>
+                  <span class="parameters">(muruga@yahoo.coms,qwerty)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,11 +189,13 @@
       &lt;class name=&quot;com.BB.utils.SeWrappers&quot;/&gt;
       &lt;class name=&quot;com.BB.utils.BBWrappers&quot;/&gt;
       &lt;class name=&quot;com.BB.utils.Reports&quot;/&gt;
-      &lt;class name=&quot;com.BB.test.BottomLinkTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Positive Test Cases --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Negative Test cases&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.BB.test.LogInTest_Nive&quot;/&gt;
+    &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Negative Test cases --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
@@ -166,10 +208,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Positive Test Cases (4 classes)</span>
+                <span class="test-name">Positive Test Cases (3 classes)</span>
               </li>
               <li>
-                <span class="test-name">Negative Test cases (0 classes)</span>
+                <span class="test-name">Negative Test cases (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -195,16 +237,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'bottomLinksValid')
-data.setCell(0, 2, 'com.BB.test.BottomLinkTest')
-data.setCell(0, 3, 43327);
+data.setCell(0, 1, 'LogIn_InValid')
+data.setCell(0, 2, 'com.BB.test.LogInTest_Nive')
+data.setCell(0, 3, 65041);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'LogIn_InValid')
+data.setCell(1, 2, 'com.BB.test.LogInTest_Nive')
+data.setCell(1, 3, 62637);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'LogIn_InValid')
+data.setCell(2, 2, 'com.BB.test.LogInTest_Nive')
+data.setCell(2, 3, 60132);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'LogIn_InValid')
+data.setCell(3, 2, 'com.BB.test.LogInTest_Nive')
+data.setCell(3, 3, 54739);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 43 seconds</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -237,25 +291,61 @@ return data;
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.BB.test.BottomLinkTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp(Chrome)</span>
-                <span class="method-start">578 ms</span>
-              </div> <!-- configuration-class before -->
+              <div class="chronological-class-name">com.BB.test.LogInTest_Nive</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(Chrome)</span>
+                <span class="method-start">2075 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">bottomLinksValid</span>
-                <span class="method-start">603 ms</span>
+                <span class="method-name">LogIn_InValid(muruga@yahoo.coms, qwerty)</span>
+                <span class="method-start">7553 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">43934 ms</span>
+                <span class="method-start">70197 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(Chrome)</span>
+                <span class="method-start">70572 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LogIn_InValid(onetwo@gmail.com, 4564xcvb)</span>
+                <span class="method-start">73808 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">128551 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(Chrome)</span>
+                <span class="method-start">128807 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LogIn_InValid(..@g.com, zxcvbn)</span>
+                <span class="method-start">132817 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">192951 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchBrowser(Chrome)</span>
+                <span class="method-start">193212 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LogIn_InValid(yahoo@gamul.org, 1234!"£$%)</span>
+                <span class="method-start">197749 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">262792 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.BB.utils.Reports</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">44172 ms</span>
+                <span class="method-start">263036 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

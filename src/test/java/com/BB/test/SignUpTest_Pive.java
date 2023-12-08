@@ -17,7 +17,7 @@ public class SignUpTest_Pive extends SeWrappers{
 	public void signupTestvalid() {
 		try {
 			Reports.setTCDesc("Validating SignUp of BestBuy functionality with valid credentials");
-			launchBrowser();
+			//launchBrowser();
 			bb.Signupwrapper("Anandh","Srinivasan","devanandh2902@gmail.com","Batman12@#");
 			Assert.assertFalse(false);
 		} 

@@ -61,7 +61,6 @@ public class BBWrappers extends SeWrappers{
 			BottomLink footpage= PageFactory.initElements(driver, BottomLink.class);
 			footpage.clickCanadapage();
 			footpage.footerLinks();
-			screenshot("BottomLinks");
 		}
 		catch(Exception e){
 			e.printStackTrace();

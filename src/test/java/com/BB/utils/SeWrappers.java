@@ -39,19 +39,21 @@ import com.BB.utils.Reports;
 
 public class SeWrappers {
 
-	public static WebDriver driver = null;
-	static String browsername;
+	public static WebDriver driver ;
+	//static String browsername;
 
 	// 1.Launching Browser 
-	@BeforeClass
+	@BeforeMethod
 	@Parameters("browser")
 
-	public void setUp(String browser){
-		this.browsername = browser;
-	}
+//	public void setUp(String browser){
+//		this.browsername = browser;
+//	}
 
-	public void launchBrowser(){
-		try{
+	public void launchBrowser(String browsername)
+	{
+		try
+		{
 			if(browsername.equalsIgnoreCase("chrome")) {
 
 				ChromeOptions opt=new ChromeOptions();

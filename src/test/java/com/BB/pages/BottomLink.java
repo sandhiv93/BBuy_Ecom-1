@@ -18,28 +18,29 @@ public class BottomLink extends SeWrappers {
 		actionsDoubleclickElement(canada);
 	}
 
-	@FindBy(xpath = "(//footer[@class='_19pcD '])[1]")
-	public List<WebElement> footerLinks;
+	@FindBy(xpath = "//a[@data-automation='fs-terms-conditions']")
+	public WebElement footerLinks;
 	public void footerLinks() {
 		jsscrollDownBottom();
-		int count=footerLinks.size();
-		System.out.println(count);
-		for(WebElement link:footerLinks){
-			String url=link.getAttribute("href");
-			try {
-				URL bottomurl = new URL(url);
-				HttpURLConnection connection = (HttpURLConnection) bottomurl.openConnection();
-				connection.setRequestMethod("HEAD");
-				int responseCode=connection.getResponseCode();
-
-				if(responseCode != HttpURLConnection.HTTP_OK) {	
-					System.out.println("The URL '" + url + "' is novalidated.");
-				} else {
-					System.out.println("The URL '" + url + "' is validated.");
-				}
-			} catch (IOException e) {		
-				System.out.println("An exception occurred, indicating a broken link.");
-			}
-		}
+		clickElement(footerLinks);
+//		int count=footerLinks.size();
+//		System.out.println(count);
+//		for(WebElement link:footerLinks){
+//			String url=link.getAttribute("href");
+//			try {
+//				URL bottomurl = new URL(url);
+//				HttpURLConnection connection = (HttpURLConnection) bottomurl.openConnection();
+//				connection.setRequestMethod("HEAD");
+//				int responseCode=connection.getResponseCode();
+//
+//				if(responseCode != HttpURLConnection.HTTP_OK) {	
+//					System.out.println("The URL '" + url + "' is novalidated.");
+//				} else {
+//					System.out.println("The URL '" + url + "' is validated.");
+//				}
+//			} catch (IOException e) {		
+//				System.out.println("An exception occurred, indicating a broken link.");
+//			}
+//		}
 	}
 }

@@ -17,8 +17,10 @@ public class BottomLinkTest extends SeWrappers{
 	public void bottomLinksValid(){
 		try{
 			Reports.setTCDesc("Verifying Bottom Links functionality in BestBuy");
-			launchBrowser();
+			//launchBrowser();
 			bb.bottomLinkswrapper();
+			bb.getTitle();
+			screenshot("Terms&Co,");
 
 		}
 		catch(Exception e){

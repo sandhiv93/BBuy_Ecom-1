@@ -16,7 +16,7 @@ public class BrokenLinkTest extends SeWrappers{
 	public void verifyGivenURL() {
 		try{
 			Reports.setTCDesc("Verify Given Url of BestBuy functionality ");
-			launchBrowser();
+			//launchBrowser();
 			bb.Brokenlinkwrapper();
 			se.getCurrentUrl();
 			se.getTitle();

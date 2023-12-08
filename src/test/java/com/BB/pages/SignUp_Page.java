@@ -6,10 +6,17 @@ import com.BB.utils.SeWrappers;
 
 public class SignUp_Page extends SeWrappers{
 	
-	@FindBy(xpath="//h4[text()='Canada']")
+	//xpath
+	//img[@alt='Canada'])[1]
+	//body/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]/img[1]
+	// /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]/img[1]
+	//div[@lang='en']//img[@alt='Canada']
+	//a[@class='canada-link']//img)[1]
+	
+	@FindBy(xpath ="//div[@lang='en']//img[@alt='Canada']")
 	public WebElement canada; 
 	public void clickUSpage() {
-		clickElement(canada);
+		actionsDoubleclickElement(canada);
 	}
 	
 	@FindBy(xpath="//span[@data-automation='sign-in-text']")
@@ -21,7 +28,7 @@ public class SignUp_Page extends SeWrappers{
 	@FindBy(xpath="//span[normalize-space()='Create an account']")
 	public WebElement createAcc; 
 	public void clickCreateAcc() {
-		waitforelementExplicitwait(createAccButton, 10);
+		//waitforelementExplicitwait(createAccButton, 10);
 		clickElement(createAcc);
 	}
 
@@ -51,7 +58,7 @@ public class SignUp_Page extends SeWrappers{
 		typeText(pwd, mypwd);
 	}
 	
-	@FindBy(xpath="//button[contains(text(),'Create an Account')]")
+	@FindBy(xpath="//span[contains(text(),'Create Account')]")
 	public WebElement createAccButton;
 	public void clickCreateAccfinish() {
 		clickElement(createAccButton);
