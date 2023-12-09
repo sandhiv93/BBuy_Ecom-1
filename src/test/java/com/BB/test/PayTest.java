@@ -7,27 +7,26 @@ import com.BB.utils.BBWrappers;
 import com.BB.utils.Reports;
 import com.BB.utils.SeWrappers;
 
-public class BrokenLinkTest extends SeWrappers{
+public class PayTest extends SeWrappers{
+
 	SeWrappers se = new SeWrappers();
 	BBWrappers bb = new BBWrappers();
 	Reports repo = new Reports();
 	
-	@Test()
-	public void verifyGivenURL() {
+	@Test(priority = 1)
+	public void add_Items_toCart(){
 		try{
-			Reports.setTCDesc("Verify Given Url of BestBuy functionality ");
+			Reports.setTCDesc("Search product and add item to the cart");
 			//launchBrowser();
-			bb.Brokenlinkwrapper();
-			se.getCurrentUrl();
-			se.getTitle();
+			bb.searchItemwrapper("Grooming Shaving Oil", "Anandh", "Srini", "6834444555", "C-5841 Draper Rd,", 
+					"5555555555554444", 01, 2028, "554");
 		}
 		catch(Exception e){
 			e.printStackTrace();
-			System.out.println("Fail to verify and The given URL is BrokenLinkUrl");
-			Reports.reportStep("FAIL", "Problem while login");
+			Reports.reportStep("FAIL", "item not  added in the cart");
 		}
 	}
-
+	
 	@AfterMethod
 	public void closeBrowser(){
 		try{
@@ -40,5 +39,4 @@ public class BrokenLinkTest extends SeWrappers{
 			e.printStackTrace();
 		}
 	}
-
 }
