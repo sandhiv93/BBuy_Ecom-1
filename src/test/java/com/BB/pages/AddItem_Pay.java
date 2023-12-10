@@ -71,9 +71,6 @@ public class AddItem_Pay extends SeWrappers{
 	@FindBy(xpath = "//button[normalize-space()='Add to Cart']")
 	public WebElement addtoCart;
 
-	//	@FindBy(xpath = "//span[@class='counter']")
-	//	public WebElement cartButton;
-
 	public void clickByBrand() throws InterruptedException {
 		clickElement(MainMenu1);
 		Thread.sleep(3000);
