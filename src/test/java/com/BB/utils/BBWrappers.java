@@ -14,7 +14,7 @@ public class BBWrappers extends SeWrappers{
 
 
 	//Account creation SignUp
-	public void Signupwrapper(String myname, String mylastname, String myemail, String mypwd) {
+	public void Signupwrapper(String myname, String mylastname, String myemail, String mypwd, String mypwd2, String phnum) {
 		try {
 			SignUp_Page signUp = PageFactory.initElements(driver, SignUp_Page.class);
 			signUp.clickUSpage();
@@ -23,8 +23,11 @@ public class BBWrappers extends SeWrappers{
 			signUp.enterFirstname(myname);
 			signUp.enterLastname(mylastname);
 			signUp.enteremail(myemail);
+			signUp.clicktoggle();
 			signUp.enterpassword(mypwd);
-			signUp.screenshot("SignUp_Valid");
+			signUp.enterCopassword(mypwd2);
+			signUp.enterPhonenum(phnum);
+			Thread.sleep(2000);
 			signUp.clickCreateAccfinish();
 		} 
 		catch (Exception e) {
@@ -38,11 +41,13 @@ public class BBWrappers extends SeWrappers{
 			LogIn_Page login = PageFactory.initElements(driver, LogIn_Page.class);
 			login.clickUSpage();
 			login.clickAccButton();
+			login.clickSignIn();
 			login.enterEmail(myemailid);
+			login.clicktoogle();
 			login.enterPassword(mypwd);
 			login.screenshot("LogIn_Valid");
+			Thread.sleep(2000);
 			login.clickLoginfinish();
-			//login.mynameAfterlOGIN();
 		} 
 		catch (Exception e) {
 			e.printStackTrace();
@@ -60,41 +65,43 @@ public class BBWrappers extends SeWrappers{
 	public void bottomLinkswrapper(){
 		try	{		
 			BottomLink footpage= PageFactory.initElements(driver, BottomLink.class);
-			footpage.clickCanadapage();
+			footpage.clickUSpage();
 			footpage.footerLinks();
+			screenshot("BottomValidate");
 		}
 		catch(Exception e){
 			e.printStackTrace();
 		}
 	}
 
-	public void searchItemwrapper(String myneed, String myFname, String myLname, String mynum, 
-			String address, String carnum, int month, int year, String CVV) {
+	public void searchItemwrapper(String myneed,String myFname,String myLname, String street, String city, String num,
+			String code, String mymail,String mynum) {
 		try {
 			AddItem_Pay pay = PageFactory.initElements(driver, AddItem_Pay.class);
 			//LogIn_Page login = PageFactory.initElements(driver, LogIn_Page.class);
-			pay.clickCanadapage();
+			pay.clickUSpage();
 			pay.clickSearchandEnter(myneed);
 			Thread.sleep(2000);
 			pay.clickIconSearch();
 			Thread.sleep(2000);
-			pay.clickandEntergroomOil();
+			pay.clickandApplePencil();
 			Thread.sleep(2000);
 			pay.clickByBrand();
 			Thread.sleep(2000);
+			pay.clickMenu2();
 			pay.shopByDepartment();			
-			pay.clickandPay();
-			Thread.sleep(2000);
-			pay.enterFirstname(myFname);
-			pay.enterLastname(myLname);
-			pay.enterPhnNum(mynum);
-			pay.enterAddress(address);
-			//pay.enterCity(mycity);
-			//pay.clickReigion(num);
-			//pay.enterPincode(myPincode);
-			pay.clickandPay2();
-			pay.enterDetailsandPay(carnum, month, year, CVV);
+			pay.enterDetails(myFname, myLname, street, city, num, code, mymail, mynum);
 			screenshot("Payment");
+		} 
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void paymentWrapper( String cno, String cvvno, String pwd) {
+		try {
+			AddItem_Pay pay = PageFactory.initElements(driver, AddItem_Pay.class);
+			pay.enterandPay(cno, cvvno, pwd);
 		} 
 		catch (Exception e) {
 			e.printStackTrace();

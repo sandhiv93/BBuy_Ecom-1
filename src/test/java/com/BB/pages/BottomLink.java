@@ -12,16 +12,20 @@ import com.BB.utils.SeWrappers;
 
 public class BottomLink extends SeWrappers {
 
-	@FindBy(xpath="//h4[text()='Canada']")
-	public WebElement canada; 
-	public void clickCanadapage() {
-		actionsDoubleclickElement(canada);
+	@FindBy(xpath="//div[@class='country-selection']//h4[contains(text(),'United States')]")
+	public WebElement US; 
+	public void clickUSpage() {
+		clickElement(US);
 	}
 
-	@FindBy(xpath = "//a[@data-automation='fs-terms-conditions']")
+	@FindBy(xpath = "//a[@class='body-copy-sm mr-200']")
 	public WebElement footerLinks;
-	public void footerLinks() {
+	@FindBy(xpath = "//h1[normalize-space()='Accessibility']")
+	public WebElement Acesss;
+	public void footerLinks() throws InterruptedException{
 		jsscrollDownBottom();
 		clickElement(footerLinks);
+		getTextFromElement(Acesss);
+		Thread.sleep(2000);
 	}
 }

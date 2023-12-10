@@ -18,7 +18,7 @@ public class SignUpTest_Nive extends SeWrappers{
 		try {
 			Reports.setTCDesc("Validating SignUp of BestBuy functionality with Invalid credentials");
 			//launchBrowser();
-			bb.Signupwrapper("Ramco","Pothys","abc@gmail.com","qwerty");
+			bb.Signupwrapper("Ramco","Pothys","abc@gmail.com", "qwerty", "qwerty", "0123456987");
 			se.screenshot("SignUp_InValid");
 			Assert.assertFalse(false);
 		} 

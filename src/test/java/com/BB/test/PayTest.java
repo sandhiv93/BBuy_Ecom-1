@@ -18,8 +18,10 @@ public class PayTest extends SeWrappers{
 		try{
 			Reports.setTCDesc("Search product and add item to the cart");
 			//launchBrowser();
-			bb.searchItemwrapper("Grooming Shaving Oil", "Anandh", "Srini", "6834444555", "C-5841 Draper Rd,", 
-					"5555555555554444", 01, 2028, "554");
+			bb.searchItemwrapper("applepencil", "Anandh", "Srini", "10 1 Dr", "Johnson Lake", "NE" ,"68937", "devanandh2902@gmail.com",
+					"9566259258");
+			//bb.paymentWrapper( "5555555555554444", "554", "Batman12@#");
+			//Reports.reportStep("PASS", "item added in the cart");
 		}
 		catch(Exception e){
 			e.printStackTrace();

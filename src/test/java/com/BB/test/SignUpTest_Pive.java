@@ -18,7 +18,9 @@ public class SignUpTest_Pive extends SeWrappers{
 		try {
 			Reports.setTCDesc("Validating SignUp of BestBuy functionality with valid credentials");
 			//launchBrowser();
-			bb.Signupwrapper("Anandh","Srinivasan","devanandh2902@gmail.com","Batman12@#");
+			bb.Signupwrapper("Anandh","Srinivasan","devanandh2902@gmail.com", "Batman12@#", "Batman12@#", "9566259258");
+			screenshot("SignUp_Valid");
+			Thread.sleep(2000);
 			Assert.assertFalse(false);
 		} 
 		catch (Exception e) {

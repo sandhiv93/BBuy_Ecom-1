@@ -20,7 +20,7 @@ public class BottomLinkTest extends SeWrappers{
 			//launchBrowser();
 			bb.bottomLinkswrapper();
 			bb.getTitle();
-			screenshot("Terms&Co,");
+			screenshot("Access");
 
 		}
 		catch(Exception e){

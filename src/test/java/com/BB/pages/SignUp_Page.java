@@ -6,26 +6,19 @@ import com.BB.utils.SeWrappers;
 
 public class SignUp_Page extends SeWrappers{
 	
-	//xpath
-	//img[@alt='Canada'])[1]
-	//body/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]/img[1]
-	// /html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/a[1]/img[1]
-	//div[@lang='en']//img[@alt='Canada']
-	//a[@class='canada-link']//img)[1]
-	
-	@FindBy(xpath ="//div[@lang='en']//img[@alt='Canada']")
-	public WebElement canada; 
+	@FindBy(xpath ="//div[@class='country-selection']//h4[contains(text(),'United States')]")
+	public WebElement US; 
 	public void clickUSpage() {
-		actionsDoubleclickElement(canada);
+		actionsDoubleclickElement(US);
 	}
 	
-	@FindBy(xpath="//span[@data-automation='sign-in-text']")
+	@FindBy(xpath="//button[@id='account-menu-account-button']//*[name()='svg']")
 	public WebElement accButton; 
 	public void clickAccButton() {
 		clickElement(accButton);
 	}
 
-	@FindBy(xpath="//span[normalize-space()='Create an account']")
+	@FindBy(xpath="//a[text()='Create Account']")
 	public WebElement createAcc; 
 	public void clickCreateAcc() {
 		//waitforelementExplicitwait(createAccButton, 10);
@@ -50,18 +43,36 @@ public class SignUp_Page extends SeWrappers{
 	public void enteremail(String myemail) {
 		typeText(email, myemail);
 	}
-		
-	@FindBy(xpath="//input[@id='password']")
+	
+	@FindBy(xpath="//span[@class='c-toggle-slider c-toggle-round']")
+	public WebElement toggle;
+	public void clicktoggle() {
+		clickElement(toggle);
+	}
+	
+	@FindBy(xpath="//input[@id='fld-p1']")
 	public WebElement pwd; 
 	public void enterpassword(String mypwd) {
 		waitforelementExplicitwait(pwd, 10);
 		typeText(pwd, mypwd);
 	}
 	
-	@FindBy(xpath="//span[contains(text(),'Create Account')]")
-	public WebElement createAccButton;
+	@FindBy(xpath="//input[@id='reenterPassword']")
+	public WebElement repwd;
+	public void enterCopassword(String myCpwd) {
+		typeText(repwd,myCpwd);
+	}
+	
+	@FindBy(xpath="//input[@id='phone']")
+	public WebElement phnum;
+	public void enterPhonenum(String num) {
+		typeText(phnum, num);
+	}
+	
+	@FindBy(xpath="//button[text()='Create an Account']")
+	WebElement clickcreateacc2;
 	public void clickCreateAccfinish() {
-		clickElement(createAccButton);
+		clickElement(clickcreateacc2);
 	}
 	
 }
