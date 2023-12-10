@@ -3,6 +3,7 @@
 <suite name="Suite">
 	<test thread-count="5" name="Positive Test Cases">
 		<parameter name="browser" value="Chrome" />
+		<!--<parameter name="browser" value="Edge"></parameter>-->
 		<classes>
 			<class name="com.BB.utils.SeWrappers" />
 			<class name="com.BB.utils.BBWrappers" />
@@ -18,6 +19,7 @@
 	Test -->
 	<test name="Negative Test cases">
 		<parameter name="browser" value="Chrome" />
+		<!--<parameter name="browser" value="Edge"></parameter>-->
 		<classes>
 			<!--<class name="com.BB.test.SignUpTest_Nive" />-->
 			<!--<class name="com.BB.test.LogInTest_Nive" />-->

@@ -12,7 +12,7 @@ public class BrokenLinkTest extends SeWrappers{
 	BBWrappers bb = new BBWrappers();
 	Reports repo = new Reports();
 	
-	@Test()
+	@Test(priority = 1)
 	public void verifyGivenURL() {
 		try{
 			Reports.setTCDesc("Verify Given Url of BestBuy functionality ");

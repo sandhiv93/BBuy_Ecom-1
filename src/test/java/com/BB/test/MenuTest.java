@@ -11,12 +11,12 @@ public class MenuTest extends SeWrappers{
 	SeWrappers se = new SeWrappers();
 	BBWrappers bb = new BBWrappers();
 	Reports repo = new Reports();
-	
-	@Test
+
+	@Test(priority = 5)
 	public void menuTest() {
 		try{
 			Reports.setTCDesc("Verify the Menu in BestBuy");
-		    bb.menuPageWrapper();
+			bb.menuPageWrapper();
 			Reports.reportStep("PASS", "BestBuy Menu all passed");
 		}
 		catch(Exception e){
@@ -24,7 +24,7 @@ public class MenuTest extends SeWrappers{
 			e.printStackTrace();
 		}	
 	}
-	
+
 	@AfterMethod
 	public void closeBrowser(){
 		try{

@@ -52,7 +52,7 @@ public class LogInTest_Pive extends SeWrappers{
 		return data;
 	}
 
-	@Test(dataProvider="XLData")
+	@Test(dataProvider="XLData", priority = 3)
 	public void LogInValid(String mailid, String pwd){
 		try{
 			Reports.setTCDesc(" Login of BestBuy with valid credentials");

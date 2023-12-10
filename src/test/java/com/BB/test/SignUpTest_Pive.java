@@ -13,7 +13,7 @@ public class SignUpTest_Pive extends SeWrappers{
 	BBWrappers bb = new BBWrappers();
 	Reports repo = new Reports();
 	
-	@Test()
+	@Test(priority = 2)
 	public void signupTestvalid() {
 		try {
 			Reports.setTCDesc("Validating SignUp of BestBuy functionality with valid credentials");

@@ -13,7 +13,7 @@ public class BottomLinkTest extends SeWrappers{
 	BBWrappers bb = new BBWrappers();
 	Reports repo = new Reports();
 	
-	@Test()
+	@Test(priority = 6)
 	public void bottomLinksValid(){
 		try{
 			Reports.setTCDesc("Verifying Bottom Links functionality in BestBuy");

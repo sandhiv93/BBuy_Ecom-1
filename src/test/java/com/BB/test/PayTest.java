@@ -13,7 +13,7 @@ public class PayTest extends SeWrappers{
 	BBWrappers bb = new BBWrappers();
 	Reports repo = new Reports();
 	
-	@Test(priority = 1)
+	@Test(priority = 4)
 	public void add_Items_toCart(){
 		try{
 			Reports.setTCDesc("Search product and add item to the cart");
