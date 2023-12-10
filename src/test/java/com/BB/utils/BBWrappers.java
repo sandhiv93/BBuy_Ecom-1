@@ -8,6 +8,7 @@ import com.BB.pages.AddItem_Pay;
 import com.BB.pages.BottomLink;
 import com.BB.pages.BrokenLink;
 import com.BB.pages.LogIn_Page;
+import com.BB.pages.MenuPage;
 import com.BB.pages.SignUp_Page;
 
 public class BBWrappers extends SeWrappers{
@@ -107,7 +108,24 @@ public class BBWrappers extends SeWrappers{
 			e.printStackTrace();
 		}
 	}
-		
 	
+	public void menuPageWrapper() {
+		try {
+			MenuPage menu = PageFactory.initElements(driver, MenuPage.class);
+			menu.clickUSpage();
+			menu.menuValidate1();
+			screenshot("TopDeal(Menu)");
+			Thread.sleep(2000);
+			menu.menuValidate2();
+			screenshot("DealOfDay(Menu)");
+			Thread.sleep(2000);
+			menu.menuValidate3();
+			screenshot("CreditCard(Menu)");
+			Thread.sleep(2000);
+		} 
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 
 }
