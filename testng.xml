@@ -8,11 +8,11 @@
 			<class name="com.BB.utils.SeWrappers" />
 			<class name="com.BB.utils.BBWrappers" />
 			<class name="com.BB.utils.Reports"/>
-			<!--<class name="com.BB.test.SignUpTest_Pive" />-->
-			<!--<class name="com.BB.test.LogInTest_Pive" />-->
-			<!--<class name="com.BB.test.BrokenLinkTest" />-->
-			<!--<class name="com.BB.test.BottomLinkTest" />-->
-			<!--<class name="com.BB.test.PayTest" />-->
+			<class name="com.BB.test.SignUpTest_Pive" />
+			<class name="com.BB.test.LogInTest_Pive" />
+			<class name="com.BB.test.BrokenLinkTest" />
+			<class name="com.BB.test.BottomLinkTest" />
+			<class name="com.BB.test.PayTest" />
 			<class name="com.BB.test.MenuTest" />
 		</classes>
 	</test> <!--
@@ -21,8 +21,8 @@
 		<parameter name="browser" value="Chrome" />
 		<!--<parameter name="browser" value="Edge"></parameter>-->
 		<classes>
-			<!--<class name="com.BB.test.SignUpTest_Nive" />-->
-			<!--<class name="com.BB.test.LogInTest_Nive" />-->
+			<class name="com.BB.test.SignUpTest_Nive" />
+			<class name="com.BB.test.LogInTest_Nive" />
 		</classes>
 
 	</test>
