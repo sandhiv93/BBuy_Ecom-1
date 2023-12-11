@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-10T21:05:31 IST" name="Suite" finished-at="2023-12-10T21:07:05 IST" duration-ms="93980">
+  <suite started-at="2023-12-11T17:46:21 IST" name="Suite" finished-at="2023-12-11T17:53:41 IST" duration-ms="440074">
     <groups>
     </groups>
-    <test started-at="2023-12-10T21:05:31 IST" name="Positive Test Cases" finished-at="2023-12-10T21:07:05 IST" duration-ms="93893">
-      <class name="com.BB.test.MenuTest">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.BB.test.MenuTest@7d9d0818]" started-at="2023-12-10T21:05:32 IST" name="launchBrowser" finished-at="2023-12-10T21:05:43 IST" duration-ms="11523" status="PASS">
+    <test started-at="2023-12-11T17:46:21 IST" name="Positive Test Cases" finished-at="2023-12-11T17:53:41 IST" duration-ms="439892">
+      <class name="com.BB.test.PayTest">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.BB.test.PayTest@7d9d0818]" started-at="2023-12-11T17:46:21 IST" name="launchBrowser" finished-at="2023-12-11T17:46:34 IST" duration-ms="12346" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,23 +18,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="menuTest()[pri:0, instance:com.BB.test.MenuTest@7d9d0818]" started-at="2023-12-10T21:05:43 IST" name="menuTest" finished-at="2023-12-10T21:07:04 IST" duration-ms="81432" status="PASS">
+        <test-method signature="add_Items_toCart()[pri:4, instance:com.BB.test.PayTest@7d9d0818]" started-at="2023-12-11T17:46:34 IST" name="add_Items_toCart" finished-at="2023-12-11T17:53:40 IST" duration-ms="426271" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- menuTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.BB.test.MenuTest@7d9d0818]" started-at="2023-12-10T21:07:04 IST" name="closeBrowser" finished-at="2023-12-10T21:07:05 IST" duration-ms="768" status="PASS">
+        </test-method> <!-- add_Items_toCart -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.BB.test.PayTest@7d9d0818]" started-at="2023-12-11T17:53:40 IST" name="closeBrowser" finished-at="2023-12-11T17:53:41 IST" duration-ms="1115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.BB.test.MenuTest -->
+      </class> <!-- com.BB.test.PayTest -->
     </test> <!-- Positive Test Cases -->
-    <test started-at="2023-12-10T21:07:05 IST" name="Negative Test cases" finished-at="2023-12-10T21:07:05 IST" duration-ms="2">
+    <test started-at="2023-12-11T17:53:41 IST" name="Negative Test cases" finished-at="2023-12-11T17:53:41 IST" duration-ms="11">
       <class name="com.BB.utils.Reports">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:com.BB.utils.Reports@1caa0244]" started-at="2023-12-10T21:05:30 IST" name="startReport" finished-at="2023-12-10T21:05:31 IST" duration-ms="1218" status="PASS">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.BB.utils.Reports@1caa0244]" started-at="2023-12-11T17:46:20 IST" name="startReport" finished-at="2023-12-11T17:46:21 IST" duration-ms="1346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.BB.utils.Reports@1caa0244]" started-at="2023-12-10T21:07:05 IST" name="endReport" finished-at="2023-12-10T21:07:06 IST" duration-ms="806" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.BB.utils.Reports@1caa0244]" started-at="2023-12-11T17:53:41 IST" name="endReport" finished-at="2023-12-11T17:53:44 IST" duration-ms="2647" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

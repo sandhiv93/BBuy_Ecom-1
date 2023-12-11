@@ -109,27 +109,28 @@ public class AddItem_Pay extends SeWrappers{
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	//Shopping By Department 
-	@FindBy(xpath = "//button[normalize-space()='Home, Furniture & Office']")
-	public WebElement HoemandOffc;
-	@FindBy(xpath = "//button[normalize-space()='Furniture']")
-	public WebElement Furn;
-	@FindBy(xpath = "//a[normalize-space()='Home Theater Furniture']")
-	public WebElement HTF;
-	@FindBy(xpath = "//a[text()='Samsung - 43” The Frame Customizable Bezel - Modern Brown']")
-	public WebElement clickFrame;
+	@FindBy(xpath = "//button[normalize-space()='Video Games']")
+	public WebElement VideoGames;
+	@FindBy(xpath = "//button[normalize-space()='Nintendo Switch']")
+	public WebElement Switch;
+	@FindBy(xpath = "//a[normalize-space()='Nintendo Switch Consoles']")
+	public WebElement NSC;
+	@FindBy(xpath = "(//button[@type='button'][normalize-space()='Add to Cart'])[1]")
+	public WebElement joystick;
 	@FindBy(xpath = "//button[@data-button-state='ADD_TO_CART']")
 	public WebElement addtoCarts;
 
 	public void shopByDepartment() throws InterruptedException {
 		
 		Thread.sleep(3000);
-		clickElement(HoemandOffc);
+		clickElement(VideoGames);
 		Thread.sleep(3000);
-		clickElement(Furn);
+		clickElement(Switch);
 		Thread.sleep(3000);
-		clickElement(HTF);
+		clickElement(NSC);
 		Thread.sleep(3000);
-		clickElement(clickFrame);
+		clickElement(joystick);
+		Thread.sleep(3000);
 		clickElement(addtoCarts);
 		Thread.sleep(3000);
 		if(addtoCarts.isSelected()){
