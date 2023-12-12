@@ -119,8 +119,8 @@ public class BBWrappers extends SeWrappers{
 			menu.menuValidate2();
 			screenshot("DealOfDay(Menu)");
 			Thread.sleep(2000);
-			menu.menuValidate3();
-			screenshot("CreditCard(Menu)");
+			//menu.menuValidate3();
+			//screenshot("CreditCard(Menu)");
 			Thread.sleep(2000);
 		} 
 		catch (Exception e) {

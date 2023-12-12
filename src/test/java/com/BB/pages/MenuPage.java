@@ -29,11 +29,14 @@ public class MenuPage extends SeWrappers {
 		getCurrentUrl();
 	}
 
-	@FindBy(xpath = "//a[normalize-space()='Credit Cards']")
-	public WebElement CreditCards;	
-	public void menuValidate3(){
-		navigateBack();
-		clickElement(CreditCards);
-		getCurrentUrl();
-	}
+	//Due to UI updated in BestBuy application below  Credit card Automation is removed, so verifications has commented
+	//For verification screenshot has been attached When credit card section is automated
+	
+//	@FindBy(xpath = "//a[normalize-space()='Credit Cards']")
+//	public WebElement CreditCards;	
+//	public void menuValidate3(){
+//		navigateBack();
+//		clickElement(CreditCards);
+//		getCurrentUrl();
+//	}
 }
