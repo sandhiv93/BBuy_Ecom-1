@@ -66,7 +66,7 @@ public class AddItem_Pay extends SeWrappers{
 	public WebElement sony;
 	@FindBy(xpath = "//a[normalize-space()='Sony headphones']")
 	public WebElement headphones;
-	@FindBy(xpath = "//a[normalize-space()='Sony - WIC100 Wireless In-ear Headphone - Black']")
+	@FindBy(xpath = "//a[text()='Sony - WF1000XM5 True Wireless Noise Cancelling Earbuds - Black']")
 	public WebElement neededProduct;
 	@FindBy(xpath = "//button[normalize-space()='Add to Cart']")
 	public WebElement addtoCart;
